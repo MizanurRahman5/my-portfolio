@@ -4,7 +4,7 @@ import Container from '../components/Container'
 import Flex from '../components/Flex'
 import { FaYoutube,FaFacebookF,FaGithub,FaTwitter,FaLinkedinIn } from 'react-icons/fa'
 import List from '../components/List'
-import logo from '../assets/logo.png'
+import logo from '../assets/vecteezy_mr-logo-design_-modified.png'
 import Image from '../components/Image'
 import { Link } from 'react-router-dom'
 
@@ -19,20 +19,20 @@ export default function Footer() {
             <Image src={logo} className="w-[70px] md:w-[90px]"/>
             </Link>
             <Link to='/'>
-            <h4 className=' text-xl md:text-2xl lg:text-4xl text-white font-robo font-semibold'>SAJIB KHAN</h4>
+            <h4 className=' text-xl md:text-2xl lg:text-4xl text-white font-robo font-semibold'>M. RAHMAN</h4>
             </Link>
           </Flex>
           <Flex className='gap-x-4 pl-14'>
-            <Link to='https://www.linkedin.com/in/md-sajib-khan-888a19287/'>
+            <Link to='https://www.linkedin.com'>
             <FaLinkedinIn className='text-white text-xl md:text-3xl'/>
             </Link>
-            <Link to='https://github.com/sajibkhandev'>
+            <Link to='https://github.com/MizanurRahman5'>
             <FaGithub className='text-white text-xl md:text-3xl'/>
             </Link>
-            <Link to='https://www.facebook.com/mdsajib.mia.3152/'>
+            <Link to='https://www.facebook.com'>
             <FaFacebookF className='text-white text-xl md:text-3xl'/>
             </Link>
-            <Link to='https://twitter.com/sajib562341'>
+            <Link to='https://twitter.com'>
             <FaTwitter className='text-white text-xl md:text-3xl'/>
             </Link>
             <Link>
@@ -71,7 +71,7 @@ export default function Footer() {
         </div>
         
       </div>
-      <p className='text-center text-sm text-white font-pop font-normal pt-10 pb-16  md:py-24'>Copyright 2023. Made by <u><span className='font-semibold underline-offset-1'>SAJIB KHAN</span></u></p>
+      <p className='text-center text-sm text-white font-pop font-normal pt-10 pb-16  md:py-24'>Copyright 2025. Made by <u><span className='font-semibold underline-offset-1'>M. RAHMAN</span></u></p>
     </Container>
    </Section>
 

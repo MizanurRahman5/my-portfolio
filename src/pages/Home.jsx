@@ -3,7 +3,7 @@ import Section from '../components/Section'
 import Container from '../components/Container'
 import Button from '../components/Button'
 import Image from '../components/Image'
-import aboutImage from '../assets/about.png'
+import aboutImage from '../assets/bg.jpg'
 import Flex from '../components/Flex'
 import Education from '../components/icons/Education'
 import { TiStarburst } from 'react-icons/ti'
@@ -13,15 +13,17 @@ import { FaBookOpen, FaYoutube, FaFacebookSquare } from 'react-icons/fa'
 import { BiSolidMessageRounded } from 'react-icons/bi'
 import { MdWavingHand } from 'react-icons/md'
 
-import project1 from '../assets/project1.png'
-import project2 from '../assets/project2.png'
-import CV from '../assets/SajibKhanCV.pdf'
+import project1 from '../assets/modified_image.png'
+import project2 from '../assets/modified_image (1).png'
+import project3 from '../assets/modified_image (2).png'
+import CV from '../assets/MIZANUR RAHMAN2.pdf'
 
 
 import ServiceCard from '../components/ServiceCard'
 import ProjectSecond from '../components/ProjectSecond'
 import { Link, Link as RouterLink } from 'react-router-dom'
 import { Link as ScrollLink } from 'react-scroll'
+import ContactForm from '../components/Contact'
 
 export default function Home() {
   useEffect(() => {
@@ -43,19 +45,21 @@ export default function Home() {
         {/* <div className='bg-banner h-screen bg-no-repeat bg-center bg-cover'></div> */}
         <Container>
           <div id="hero">
-            <h2 className='text-[27px] sm:text-[32px] md:text-[36px] lg:text-[40px]  xl:text-text50 pt-12 text-black font-pop font-semibold md:pt-28 lg:pt-32 xl:pt-40 md:bg-6 lg:pb-8 pb-4 text-center mx-1.5'>HEY, I'M MOHAMMAD SAJIB KHAN</h2>
+            <h2 className='text-[27px] sm:text-[32px] md:text-[36px] lg:text-[40px]  xl:text-text50 pt-12 text-black font-pop font-semibold md:pt-28 lg:pt-32 xl:pt-40 md:bg-6 lg:pb-8 pb-4 text-center mx-1.5'>HEY, I'M MIZANUR RAHMAN</h2>
             <p className='text-center mx-auto px-5 md:w-w725 sm:leading-7 md:leading-7 md:leading-10 text-sm md:text-base  lg:text-lg text-black font-robo font-normal mx-1.5 sm:mx-4 md:mx-auto'>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
 
-
-            <ScrollLink to="project2" spy={true} smooth={true} offset={50} duration={1200} ><Button text="View Project" className='flex mx-auto mt-8 sm:mt-10' /></ScrollLink>
+            <a href={CV} download="" className='flex mt-6 justify-center'>
+                  <Button text="Download CV" className='px-12' />
+                </a>
+            
           </div>
         </Container>
         <div className=' bg-third h-[120px] w-[10px] sm:w-[30px] sm:h-[165px] sm:top-[190px] md:h-[210px] lg:h-[270px] md:w-[30px] lg:w-[40px] absolute left-0 top-[226px] md:top-[220px] lg:top-[90px] flex flex-col justify-between items-center p-3 md:p-5  lg:p-7 drop-shadow-xl '>
-          <Link to="https://www.linkedin.com/in/md-sajib-khan-888a19287/">
+          <Link to="https://www.linkedin.com">
             <AiFillLinkedin className='sm:text-xl md:text-[26px] lg:text-[34px]' />
           </Link>
 
-          <Link to='https://github.com/sajibkhandev'>
+          <Link to='https://github.com/MizanurRahman5'>
             <AiOutlineGithub className='sm:text-xl md:text-[26px] lg:text-[34px]' />
           </Link>
 
@@ -63,11 +67,11 @@ export default function Home() {
             <FaYoutube className='sm:text-xl md:text-[26px] lg:text-[30px]' />
           </Link>
 
-          <Link to='https://twitter.com/sajib562341'>
+          <Link to='https://twitter.com'>
             <AiOutlineTwitter className='sm:text-xl md:text-[26px] lg:text-[34px]' />
           </Link>
 
-          <Link to="https://www.facebook.com/mdsajib.mia.3152/">
+          <Link to="https://www.facebook.com">
             <FaFacebookSquare className='text-sm sm:text-xl md:text-[26px] lg:text-[30px]' />
           </Link>
         </div>
@@ -84,30 +88,28 @@ export default function Home() {
             </div>
             {/* <div className='-translate-y-[70px]'></div> */}
             <Flex className='md:px-10 lg:px-4 xl:px-0'>
-              <div className='w-1/2 hidden md:block flex items-center '>
-                <Image src={aboutImage} className='md:w-[80%]' />
+              <div className='w-1/2 hidden md:block flex rounded items-center '>
+                <Image src={aboutImage} className='md:w-[80%] rounded-md' />
               </div>
 
               <div className=' w-full md:w-1/2'>
                 <Flex className=' justify-between gap-x-2 md:gap-x-2 lg:gap-x-2  px-4 sm:px-12 md:px-0  lg:px-0'>
                   <div className='bg-four rounded-lg drop-shadow-lg w-w270 pb-4 md:h-h150'>
                     <Education className="flex justify-center mx-auto pt-3 md:pt-4 w-w20 h-h20" />
-                    <h3 className='text-black text-sm lg:text-xl font-robo font-medium text-center pt-4 md:pt-6'>Experience</h3>
-                    <p className='text-five text-xs lg:text-base font-robo font-normal text-center pt-1 md:pt-2'>2 + years</p>
-                    <p className='text-five text-sm  lg:text-base font-robo font-normal text-center '>Frontend Development</p>
+                    <h3 className='text-black text-sm lg:text-xl font-robo font-medium text-center pt-4 md:pt-6'>Hobbies</h3>
+                    <p className='text-five text-xs lg:text-base font-robo font-normal text-center pt-1 md:pt-2'>Coding</p>
+                    <p className='text-five text-sm  lg:text-base font-robo font-normal text-center '>Development</p>
                   </div>
 
                   <div className='bg-four rounded-lg drop-shadow-lg w-w270 pb-4 md:h-h150'>
                     <Education className="flex justify-center mx-auto pt-3 md:pt-4 w-w20 h-h20" />
                     <h3 className='text-black text-sm lg:text-xl font-robo font-medium text-center pt-4 md:pt-6'>Education</h3>
                     <p className='text-five text-xs lg:text-base font-robo font-normal text-center pt-1 md:pt-2'>Diploma</p>
-                    <p className='text-five text-sm  lg:text-base font-robo font-normal text-center '>B.S.c  Bachelors Degree</p>
+                    
                   </div>
                 </Flex>
                 <p className=' w-full md:text-left text-center px-4 md:px-0 text-black text-sm md:text-base  lg:text-lg font-normal font-robo pt-10 pb-8 sm:leading-7 sm:px-4 md:mx-auto'>I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.</p>
-                <a href={CV} download="">
-                  <Button text="Download CV" className='px-12 flex mx-auto md:mx-0' />
-                </a>
+                <ScrollLink to="project" spy={true} smooth={true} offset={50} duration={1200} ><Button text="View Project" className='flex  mt-4 max-sm:mx-auto sm:mt-10' /></ScrollLink>
               </div>
             </Flex>
           </div>
@@ -141,7 +143,7 @@ export default function Home() {
                   <TiStarburst className='mt-0.5' />
                   <div>
                     <h5 className='text-sm text-black font-medium  font-robo'>Tailwind</h5>
-                    <p className='text-xs text-five font-normal  font-robo' >Basic</p>
+                    <p className='text-xs text-five font-normal  font-robo' >Experienced</p>
                   </div>
                 </Flex>
                 <Flex className='gap-x-1.5 md:gap-x-3 pb-4 pl-6 pr-6 md:pl-12 md:pr-10'>
@@ -155,7 +157,7 @@ export default function Home() {
                   <TiStarburst className='mt-0.5' />
                   <div>
                     <h5 className='text-sm text-black font-medium  font-robo'>JavaScript</h5>
-                    <p className='text-xs text-five font-normal  font-robo' >Basic</p>
+                    <p className='text-xs text-five font-normal  font-robo' >Intermediate</p>
                   </div>
                 </Flex>
                 <Flex className='gap-x-1.5 md:gap-x-3 pb-4 pl-6 pr-6 md:pl-12 md:pr-10'>
@@ -168,7 +170,7 @@ export default function Home() {
                 <Flex className='gap-x-1.5 md:gap-x-3 pb-4 pl-6 pr-6 md:pl-12 md:pr-10'>
                   <TiStarburst className='mt-0.5' />
                   <div>
-                    <h5 className='text-sm text-black font-medium  font-robo'>Recat</h5>
+                    <h5 className='text-sm text-black font-medium  font-robo'>React</h5>
                     <p className='text-xs text-five font-normal  font-robo' >Intermediate</p>
                   </div>
                 </Flex>
@@ -237,12 +239,12 @@ export default function Home() {
             <p className='w-full px-4 sm:px-4 md:w-[780px]  mx-auto text-black text-sm md:text-base  lg:text-lg font-normal font-robo  text-center sm:leading-7 '>Here you will find some of the personal and clients projects that I created with each project containing its own case study</p>
 
             <div className='md:flex md:justify-between items-center md:pt-5 group/project1'>
-              <RouterLink to='/casestudy'>
-                <Image src={project1} className='py-3 px-12 sm:mx-auto' />
+              <RouterLink to='/casestudy' className='py-3 px-12'>
+                <Image src={project1} className='max-w-[600px] rounded-lg border-8  sm:mx-auto' />
               </RouterLink>
               <RouterLink to='/casestudy'>
                 <div>
-                  <h3 className='group/project1 w:full px-10 md:px-0 md:w-[350px] lg:w-w412 text-black  md:mr-10 lg:mr-0 text-xl md:text-[28px]  lg:text-text45 font-medium font-robo pb-4 md:pb-8 text-center pt-2 sm:px-20 lg:pt-12 md:leading-[42px] lg:leading-[60px]'>TalksME is a successful Open-Source  project that I am creating</h3>
+                  <h3 className='group/project1 w:full px-10 md:px-0 md:w-[350px] lg:w-w412 text-black  md:mr-10 lg:mr-0 text-xl md:text-[28px]  lg:text-text45 font-medium font-robo pb-4 md:pb-8 text-center pt-2 sm:px-20 lg:pt-12 md:leading-[42px] lg:leading-[60px]'>Lost and Found is a successful Open-Source  project that I am creating</h3>
 
                   <RouterLink className='relative group/project1'>
 
@@ -256,16 +258,37 @@ export default function Home() {
                 </div>
               </RouterLink>
             </div>
-            {/* Second Project Start */}
+            
+            <div className='md:flex md:justify-between items-center md:pt-5 group/project1'>
+              <RouterLink to='/casestudy3' className='py-3 px-12'>
+                <Image src={project3} className='max-w-[600px] rounded-lg border-8  sm:mx-auto' />
+              </RouterLink>
+              <RouterLink to='/casestudy3'>
+                <div>
+                  <h3 className='group/project1 w:full px-10 md:px-0 md:w-[350px] lg:w-w412 text-black  md:mr-10 lg:mr-0 text-xl md:text-[28px]  lg:text-text45 font-medium font-robo pb-4 md:pb-8 text-center pt-2 sm:px-20 lg:pt-12 md:leading-[42px] lg:leading-[60px]'>A Crowd Funding Application is a successful Open-Source  project that I am creating</h3>
+
+                  <RouterLink className='relative group/project1'>
+
+                    <div className='relative hidden md:block'>
+                      <p className='text-sm lg:text-lg text-black font-robo font-semibold absolute top-[11px] left-[141px] z-10'>Case Study</p>
+                      <BsArrowRight className='absolute lg:top-[20px] lg:left-[256px] md:top-[14px] md:left-[236px] z-10' />
+                      <div className='group-hover/project1:w-[190px] bg-[#93C5FD] w-[68px] h-[50px] absolute top-0 left-[115px] duration-500 ease-in-out'></div>
+                    </div>
+                  </RouterLink>
+
+                </div>
+              </RouterLink>
+            </div>
+            {/* 3rd Project Start */}
 
             <div className='md:flex md:justify-between items-center lg:items-start pt-24 md:pt-36 group/project2 '>
-              <RouterLink to='/casestudy2'>
-                <Image src={project2} className='py-3 px-12 sm:mx-auto' />
+              <RouterLink to='/casestudy2' className='py-3 px-12'>
+                <Image src={project2} className='max-w-[600px] rounded-lg border-8 sm:mx-auto' />
 
               </RouterLink>
               <RouterLink to='/casestudy2'>
                 <div>
-                  <h3 className='group/project2 w:full px-10 md:px-0 md:w-[350px] lg:w-w412 text-black text-xl md:mr-10 lg:mr-0  md:text-[28px] lg:text-text45 font-medium font-robo pb-4 md:pb-8 text-center pt-2 sm:px-20 lg:pt-12 md:leading-[42px] lg:leading-[60px]'>Orebi is a convenient online store where you can purchase any products</h3>
+                  <h3 className='group/project2 w:full px-10 md:px-0 md:w-[350px] lg:w-w412 text-black text-xl md:mr-10 lg:mr-0  md:text-[28px] lg:text-text45 font-medium font-robo pb-4 md:pb-8 text-center pt-2 sm:px-20 lg:pt-12 md:leading-[42px] lg:leading-[60px]'>Gadget Haven is a convenient online store where you can purchase any products</h3>
 
                   <RouterLink className='relative group/project2'>
                     <div className='relative hidden md:block'>
@@ -281,9 +304,9 @@ export default function Home() {
 
             {/* Second Project end */}
             {/* Event to Event Project start*/}
-            <div className='' id="project2">
+            {/* <div className='' id="project2">
               <ProjectSecond />
-            </div>
+            </div> */}
             {/* Event to Event Project start*/}
 
           </div>
@@ -317,27 +340,12 @@ export default function Home() {
             <div className='md:flex md:justify-between '>
               <h3 className='hidden md:inline-block md:w-w412 text-black mx-4  text-xl md:text-[28px]  lg:text-text45 font-medium font-robo pb-3 text-center md:leading-[70px]  md:pt-12 mt-12'>Find Me easily Contact without any technical skills</h3>
               <div className='md:w-[570px] md:h-[470px] bg-four rounded-2xl border-white border-2  '>
-                <div className='py-5 md:py-10 px-5 md:px-14'>
-                  <form action="">
-                    <div>
-                      <label htmlFor="name" className=' text-sm md:text-lg text-five font-medium font-robo pb-1.5 block'>Name: </label>
-                      <input id="name" type="text" className='w-full bg-third rounded placeholder:text-six placeholder:text-xs md:placeholder:text-base placeholder:font-robo placeholder:font-normal py-1 px-3 md:py-2 md:px-6 mb-3' placeholder='Enter Your Name:' />
-                    </div>
-                    <div>
-                      <label htmlFor="email" className='text-sm md:text-lg text-five font-medium font-robo pb-1.5 block'>Email: </label>
-                      <input id="email" type="text" className='w-full bg-third rounded placeholder:text-six placeholder:text-xs md:placeholder:text-base placeholder:font-robo placeholder:font-normal py-1 px-3 md:py-2 md:px-6 mb-3' placeholder='Enter Your Email:' />
-                    </div>
-                    <div>
-                      <label htmlFor="message" className='text-sm md:text-lg text-five font-medium font-robo pb-1.5 block'>Messages: </label>
-                      <textarea id="message" type="text" className='w-full h-[80px] md:h-[110px] bg-third rounded placeholder:text-six placeholder:text-xs md:placeholder:text-base placeholder:font-robo placeholder:font-normal py-1 px-3 md:py-2 md:px-6 mb-3' placeholder='Enter Your Messages:' />
-                    </div>
-                    <Button text="Message" className='flex mx-auto md:mt-2 md:py-2' />
-                  </form>
-                </div>
+                <ContactForm/>
               </div>
 
             </div>
           </div>
+          
         </Container>
 
       </Section>

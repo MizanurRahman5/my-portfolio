@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Section from '../components/Section'
 import Container from '../components/Container'
 import Flex from '../components/Flex'
-import logo from '../assets/logo.png'
+import logo from '../assets/vecteezy_mr-logo-design_-modified.png'
 import Image from '../components/Image'
 import List from '../components/List'
 import { Link } from 'react-scroll'
@@ -91,7 +91,7 @@ export default function Navber() {
                     <div className='mx-2 sm:mx-4 md:w-1/2 md:mx:4 lg:mx-0'>
                         <Flex className='items-center gap-x-1 sm:gap-x-3 md:gap-x-4'>
                             <RouterDom to='/'><Image src={logo} className='w-[55px] sm:w-[65px] sm:h-[65px]  lg:w-[75px] lg:h-[75px]' /></RouterDom>
-                            <RouterDom to='/'><h2 className='text-secondary text-xl md:text-[24px] lg:text-text28 font-robo font-semibold'>SAJIB KHAN</h2></RouterDom>
+                            <RouterDom to='/'><h2 className='text-secondary text-xl md:text-[24px] lg:text-text28 font-robo font-semibold'>M. RAHMAN</h2></RouterDom>
                         </Flex>
                     </div>
                     <div className='hidden md:w-1/2 md:justify-end md:flex  md:items-center md:mx-8 xl:mx-0'>
