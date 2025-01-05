@@ -239,8 +239,8 @@ export default function Home() {
             <p className='w-full px-4 sm:px-4 md:w-[780px]  mx-auto text-black text-sm md:text-base  lg:text-lg font-normal font-robo  text-center sm:leading-7 '>Here you will find some of the personal and clients projects that I created with each project containing its own case study</p>
 
             <div className='md:flex md:justify-between items-center md:pt-5 group/project1'>
-              <RouterLink to='/casestudy' className='py-3 px-12'>
-                <Image src={project1} className='max-w-[600px] rounded-lg border-8  sm:mx-auto' />
+              <RouterLink to='/casestudy' className='py-3 px-12 max-sm:flex justify-center'>
+                <Image src={project1} className=' rounded-lg border-8  sm:mx-auto' />
               </RouterLink>
               <RouterLink to='/casestudy'>
                 <div>
@@ -260,8 +260,8 @@ export default function Home() {
             </div>
             
             <div className='md:flex md:justify-between items-center md:pt-5 group/project1'>
-              <RouterLink to='/casestudy3' className='py-3 px-12'>
-                <Image src={project3} className='max-w-[600px] rounded-lg border-8  sm:mx-auto' />
+              <RouterLink to='/casestudy3' className='py-3 px-12 max-sm:flex justify-center'>
+                <Image src={project3} className=' rounded-lg border-8  sm:mx-auto' />
               </RouterLink>
               <RouterLink to='/casestudy3'>
                 <div>
@@ -282,8 +282,8 @@ export default function Home() {
             {/* 3rd Project Start */}
 
             <div className='md:flex md:justify-between items-center lg:items-start pt-24 md:pt-36 group/project2 '>
-              <RouterLink to='/casestudy2' className='py-3 px-12'>
-                <Image src={project2} className='max-w-[600px] rounded-lg border-8 sm:mx-auto' />
+              <RouterLink to='/casestudy2' className='py-3 px-12 max-sm:flex justify-center'>
+                <Image src={project2} className=' rounded-lg border-8 sm:mx-auto' />
 
               </RouterLink>
               <RouterLink to='/casestudy2'>
@@ -319,7 +319,7 @@ export default function Home() {
         <Container>
           <div id='service'>
             <h2 className='text-3xl sm:text-4xl md:text-[36px] lg:text-text50 text-black font-medium font-robo text-center pb-4'>Services</h2>
-            <p className='md:w-w833 text-center px-4 mx-auto text-sm md:text-base  lg:text-lg md:text-lg text-black font-robo font-normal md:pb-16 sm:leading-7'>Our consultants have years of experience on the in success. ​Through the provision of our services. Find the service we provide</p>
+            <p className='md:max-w-[850px] text-center px-4 mx-auto text-sm md:text-base  lg:text-lg md:text-lg text-black font-robo font-normal md:pb-16 sm:leading-7'>Our consultants have years of experience on the in success. ​Through the provision of our services. Find the service we provide</p>
             <div className='sm:flex px-10 md:px-10 lg:px-0 sm:gap-x-7 lg:gap-x-0  md:justify-between sm:flex-wrap'>
               <ServiceCard className='mx-auto' heading='E-Commerce' para='Development' />
               <ServiceCard className='mx-auto' heading='Social Media' para='Development' />
