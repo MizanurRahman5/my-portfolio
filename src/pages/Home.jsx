@@ -249,7 +249,7 @@ export default function Home() {
                   <RouterLink className='relative group/project1'>
 
                     <div className='relative hidden md:block'>
-                      <p className='text-sm lg:text-lg text-black font-robo font-semibold absolute top-[11px] left-[141px] z-10'>Case Study</p>
+                      <Link to='/casestudy' className='text-sm lg:text-lg text-black font-robo font-semibold absolute top-[11px] left-[141px] z-10'>Case Study</Link>
                       <BsArrowRight className='absolute lg:top-[20px] lg:left-[256px] md:top-[14px] md:left-[236px] z-10' />
                       <div className='group-hover/project1:w-[190px] bg-[#93C5FD] w-[68px] h-[50px] absolute top-0 left-[115px] duration-500 ease-in-out'></div>
                     </div>
@@ -270,7 +270,7 @@ export default function Home() {
                   <RouterLink className='relative group/project1'>
 
                     <div className='relative hidden md:block'>
-                      <p className='text-sm lg:text-lg text-black font-robo font-semibold absolute top-[11px] left-[141px] z-10'>Case Study</p>
+                      <Link to='/casestudy3' className='text-sm lg:text-lg text-black font-robo font-semibold absolute top-[11px] left-[141px] z-10'>Case Study</Link>
                       <BsArrowRight className='absolute lg:top-[20px] lg:left-[256px] md:top-[14px] md:left-[236px] z-10' />
                       <div className='group-hover/project1:w-[190px] bg-[#93C5FD] w-[68px] h-[50px] absolute top-0 left-[115px] duration-500 ease-in-out'></div>
                     </div>
@@ -292,7 +292,7 @@ export default function Home() {
 
                   <RouterLink className='relative group/project2'>
                     <div className='relative hidden md:block'>
-                      <p className='text-sm lg:text-lg text-black font-robo font-semibold absolute top-[11px] left-[141px] z-10'>Case Study</p>
+                      <Link to='/casestudy2' className='text-sm lg:text-lg text-black font-robo font-semibold absolute top-[11px] left-[141px] z-10'>Case Study</Link>
                       <BsArrowRight className='absolute lg:top-[20px] lg:left-[256px] md:top-[14px] md:left-[236px] z-10' />
                       <div className='group-hover/project2:w-[190px] bg-[#93C5FD] w-[68px] h-[50px] absolute top-0 left-[115px] duration-500 ease-in-out'></div>
                     </div>
