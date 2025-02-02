@@ -16,7 +16,7 @@ import { MdWavingHand } from 'react-icons/md'
 import project1 from '../assets/modified_image.png'
 import project2 from '../assets/modified_image (1).png'
 import project3 from '../assets/modified_image (2).png'
-import CV from '../assets/MIZANUR RAHMAN2.pdf'
+import CV from '../assets/Mizanur Rahman Resume.pdf'
 
 
 import ServiceCard from '../components/ServiceCard'
