@@ -71,7 +71,7 @@ export default function Home() {
             <AiOutlineTwitter className='sm:text-xl md:text-[26px] lg:text-[34px]' />
           </Link>
 
-          <Link to="https://www.facebook.com">
+          <Link to="https://web.facebook.com/md.misty.75">
             <FaFacebookSquare className='text-sm sm:text-xl md:text-[26px] lg:text-[30px]' />
           </Link>
         </div>
@@ -304,9 +304,9 @@ export default function Home() {
 
             {/* Second Project end */}
             {/* Event to Event Project start*/}
-            {/* <div className='' id="project2">
+            <div className='' id="project2">
               <ProjectSecond />
-            </div> */}
+            </div>
             {/* Event to Event Project start*/}
 
           </div>
